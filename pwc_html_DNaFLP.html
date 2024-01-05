@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/1000px-PricewaterhouseCoopers_Logo.svg.png" width="200" 
+     height="125" onload=alert('XSS')>
+  </div>
+  <h1>Definitely Not a Fake Login Page</h1>
+  <form action="/login" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Submit" onclick="alert('You have been hacked')">
+  </form>
+</body>
+</html>
